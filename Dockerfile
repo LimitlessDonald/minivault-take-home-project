@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y git curl
 RUN go build -o minivault-server .
 
 
-RUN mv minivault  /usr/local/bin/
+RUN mv minivault-server  /usr/local/bin/
 
 
 
