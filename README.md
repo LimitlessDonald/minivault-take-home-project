@@ -72,7 +72,7 @@ Usage of ./minivault-server:
 - With custom CLI parameters 
 
 ```shell
-     docker run --name minivault-container -p 8080:7272 minivault:latest /bin/bash -c "ollama run llama3.2:latest & minivault-server --port=7272 --test-prompt='Tell me about Friedrich Nietzsche'"
+       docker run --name minivault-container -p 8080:7272 minivault:latest /bin/bash -c "ollama serve & sleep 5 && ollama pull llama3.2:latest && minivault-server --port=7272 --test-prompt='Tell me about Friedrich Nietzsche'"
 ```
 
 ### Run Without Docker
